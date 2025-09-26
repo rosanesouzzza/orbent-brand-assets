@@ -3,7 +3,6 @@
 ## 1. Identidade Visual
 - **Logotipo principal**:  
 ![Logo Orbent Claro](orbent-logo-claro.png.png)
-![Logo Orbent Escuro](orbent-logo-escuro.png.png)
 ![Ícone Escuro](orbent-icon-escuro.png)
 ![Ícone Transparente](orbent-icon-transparente.png)
 
