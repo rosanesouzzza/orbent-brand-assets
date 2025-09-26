@@ -41,3 +41,49 @@ Exemplo CSS:
 font-family: 'Bebas Neue', sans-serif;   /* Headlines */
 font-family: 'Inter', sans-serif;        /* Body */
 font-family: 'Playfair Display', serif;  /* Slogans */
+
+4. Iconografia
+
+Estilo flat minimalista, linhas limpas, bordas arredondadas.
+
+Preferência por SVG.
+
+Sempre seguir a paleta oficial.
+
+5. UI/UX Guidelines
+
+Layout: grid, espaçamento generoso, cantos arredondados.
+
+Botões:
+
+Primário → fundo Amber, texto azul.
+
+Secundário → outline branco, fundo transparente.
+
+Feedback visual: animações suaves em hover/click.
+
+Acessibilidade: contraste AA, navegação por teclado.
+
+6. Tom de Voz
+
+Personalidade: confiável, visionário, humano.
+
+Tom: claro, direto, próximo.
+
+Palavras-chave: clareza, precisão, inovação, controle.
+
+Exemplo:
+
+❌ “Nosso sistema é avançado e complexo.”
+
+✅ “Controle tudo em um só lugar, com a clareza que você precisa.”
+
+7. Aplicações
+
+Documentos internos: capa branca + logo Orbent.
+
+Apresentações: fundo azul, títulos em Amber.
+
+Redes sociais: uso criativo do ícone com a paleta.
+
+Mockups: widescreen (1920x1080), fundo Azul Orbent.
