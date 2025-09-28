@@ -1,90 +1,132 @@
-# 🌐 Orbent — Style Guide Oficial
+# 📘 Orbent – Style Guide Oficial
+
+Este documento define a identidade visual e o design system da Orbent.  
+Seu objetivo é garantir **consistência** em todos os produtos, dashboards, relatórios e comunicações da marca.
+
+---
 
 ## 1. Identidade Visual
-- **Logotipo principal**:  
-![Logo Orbent Claro](orbent-logo-claro.png.png)
-![Ícone Escuro](orbent-icon-escuro.png)
-![Ícone Transparente](orbent-icon-transparente.png)
 
-- **Ícone isolado**:  
-  ![Ícone Claro](orbent-icon-claro.png)  
-  ![Ícone Escuro](orbent-icon-escuro.png)  
+### Logotipos Oficiais
+- **Logo Principal**
+  - ![Logo Claro](./orbent-logo-claro.png)
+  - ![Logo Escuro](./orbent-logo-escuro.png)
 
-- **Variações permitidas**:
-  - Versão transparente para fundos coloridos.  
-  - Versão monocromática (branco ou preto).  
+- **Logo Transparente**
+  - ![Logo Transparente](./Orbent-transparente.png)
 
-- **Proibições**:
-  - Não distorcer proporções.  
-  - Não aplicar sombras, gradientes ou contornos não oficiais.  
-  - Não usar sobre fundos de baixo contraste sem versão adaptada.  
+- **Logo com Slogan**
+  - ![Logo + Slogan](./logo-slogan.png)
+
+### Ícones
+- ![Ícone Claro](./orbent-icon-claro.png)
+- ![Ícone Escuro](./orbent-icon-escuro.png)
+- ![Ícone Transparente](./orbent-icon-transparente.png)
+
+> 🔒 **Regras de uso**  
+> - Manter proporção original.  
+> - Espaço mínimo ao redor igual à altura do “O”.  
+> - Nunca distorcer, rotacionar ou aplicar efeitos extras.  
+> - Para white-label: aplicar marca do cliente à direita, mantendo “by Orbent”.
 
 ---
 
 ## 2. Paleta de Cores
-| Nome          | Hex      | Uso principal |
-|---------------|----------|---------------|
-| Azul Orbent   | `#001434` | Fundos, headers, institucional |
-| Amber Orbent  | `#FFBF00` | Destaques, CTAs, ícones |
-| Branco        | `#FFFFFF` | Texto sobre fundo escuro |
-| Cinza Neutro  | `#F4F4F4` | Backgrounds secundários |
-| Roxo Acento   | `#8A2BE2` | Acentos visuais e UI |
+
+![Paleta](./paleta.png)
+
+| Nome               | Hex      | Uso Principal                        |
+|--------------------|----------|--------------------------------------|
+| Branco Gelo        | `#FDFDFD` | Fundos claros, contraste de texto.   |
+| Azul Orbent        | `#001434` | Fundos institucionais, dashboards.   |
+| Gradiente Orbent   | `linear 45°: #f8ad00 → #e13333 → #3992ff` | Ícone “O”, destaques premium. |
+| Dourado Orbent     | `#CCA300` | Ênfase em botões, KPIs financeiros. |
+| Azul Acento        | `#5271FF` | Links, CTAs secundários.            |
 
 ---
 
 ## 3. Tipografia
-- **Títulos**: [Bebas Neue](https://fonts.google.com/specimen/Bebas+Neue)  
-- **Corpo de texto**: [Inter](https://fonts.google.com/specimen/Inter)  
-- **Slogans/Institucional**: [Playfair Display](https://fonts.google.com/specimen/Playfair+Display)
 
-Exemplo CSS:  
-```css
-font-family: 'Bebas Neue', sans-serif;   /* Headlines */
-font-family: 'Inter', sans-serif;        /* Body */
-font-family: 'Playfair Display', serif;  /* Slogans */
+- **Fonte primária**: [Inter](https://fonts.google.com/specimen/Inter)  
+- **Fonte secundária**: [Poppins](https://fonts.google.com/specimen/Poppins)  
 
-4. Iconografia
+**Regras:**
+- Títulos H1/H2 → Poppins, bold  
+- Texto corrido → Inter, regular/medium  
+- Contraste mínimo AA (WCAG 2.1)  
 
-Estilo flat minimalista, linhas limpas, bordas arredondadas.
+---
 
-Preferência por SVG.
+## 4. Design System
 
-Sempre seguir a paleta oficial.
+### Componentes
+- **Botões**: arredondados 8px, cores primárias (Azul Orbent / Gradiente).  
+- **Cards**: fundo branco (#FDFDFD) ou azul Orbent (#001434) com sombra suave.  
+- **Tabelas**: zebra striping em cinza claro, header bold.  
+- **Badges**: gradiente Orbent para status ativos.  
+- **Loaders**: animação circular em gradiente Orbent.  
 
-5. UI/UX Guidelines
+### Acessibilidade
+- Contraste mínimo: AA  
+- Navegação por teclado  
+- Foco visível em botões e links  
 
-Layout: grid, espaçamento generoso, cantos arredondados.
+---
 
-Botões:
+## 5. Linguagem & Tom
 
-Primário → fundo Amber, texto azul.
+- **Slogan oficial**  
+  *Visão sistêmica. Cultura viva. Inteligência com propósito.*  
 
-Secundário → outline branco, fundo transparente.
+- **Tom**: Institucional, premium, acessível.  
 
-Feedback visual: animações suaves em hover/click.
+- **Aplicação**  
+  - Interno → dashboards, relatórios, intranet.  
+  - Externo → clientes, white-label “by Orbent”.  
 
-Acessibilidade: contraste AA, navegação por teclado.
+---
 
-6. Tom de Voz
+## 6. Exemplos de Aplicação
 
-Personalidade: confiável, visionário, humano.
+- Login screen com logo Orbent no canto esquerdo.  
+- White-label: Orbent à esquerda + marca do cliente à direita (“ACME by Orbent”).  
+- Paleta aplicada em dashboards financeiros e relatórios ESG.  
 
-Tom: claro, direto, próximo.
+---
 
-Palavras-chave: clareza, precisão, inovação, controle.
+## 7. Texturas & Patterns
 
-Exemplo:
+Além das cores sólidas, a identidade Orbent utiliza **patterns exclusivos** para dar profundidade e consistência visual.
 
-❌ “Nosso sistema é avançado e complexo.”
+### Patterns Oficiais
 
-✅ “Controle tudo em um só lugar, com a clareza que você precisa.”
+1. **Orbent Pattern Colorido**  
+   - ![Pattern](./pattern.png)  
+   - Uso: fundos de destaque, apresentações, áreas premium.  
 
-7. Aplicações
+2. **Orbent Pattern com Opacidade**  
+   - ![Pattern Opacidade](./pattern_opacidade.png)  
+   - Uso: sobreposição em dashboards e relatórios, mantendo legibilidade.  
 
-Documentos internos: capa branca + logo Orbent.
+3. **Orbent Galáxia**  
+   - ![Pattern Galáxia](./Pattern-galaxia.png)  
+   - Uso: aplicações conceituais, institucionais e de storytelling.  
 
-Apresentações: fundo azul, títulos em Amber.
+> 🔒 **Regras de uso**  
+> - Não distorcer ou alterar as proporções.  
+> - Sempre aplicar com contraste suficiente para manter a legibilidade do texto.  
+> - Usar como **background de apoio**, nunca como elemento principal.  
 
-Redes sociais: uso criativo do ícone com a paleta.
+---
 
-Mockups: widescreen (1920x1080), fundo Azul Orbent.
+## 8. Governança
+
+- **Repositório**: `orbent-brand-assets`  
+- **Versionamento**: manter `logos/`, `icons/`, `palette/`, `patterns/` organizados.  
+- **Exportações**: PNG/SVG para apps e web, PDF para apresentações.  
+
+---
+
+📌 **Resumo**  
+Este style guide define logotipos, ícones, paleta, tipografia, design system, linguagem e padrões visuais para garantir **coerência e identidade forte** da marca Orbent.
+
