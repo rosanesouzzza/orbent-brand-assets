@@ -1,7 +1,3 @@
-Perfeito 💫 — aqui está o conteúdo completo e formatado do **`README.md`** pronto para commit no repositório **`rosanesouzzza/orbent-brand-assets`**.
-Este README resume toda a identidade da Orbent e serve como página inicial pública do Brand System.
-
----
 
 ```markdown
 # 🌌 ORBENT BRAND ASSETS
@@ -14,7 +10,6 @@ Repositório oficial de **identidade visual**, **tokens de design** e **componen
 
 ## 📦 Estrutura
 
-```
 
 orbent-brand-assets/
 ├── README.md
@@ -38,7 +33,7 @@ orbent-brand-assets/
 │   └── Hero Section.jpeg
 └── palette.png
 
-````
+
 
 ---
 
@@ -59,33 +54,33 @@ orbent-brand-assets/
 ## 🧩 Uso rápido do CSS
 
 ### 1️⃣ Importar fontes e estilo base
-```html
+html
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./css/orbent.css">
-````
+
 
 ### 2️⃣ Aplicar tema
 
-```html
+html
 <body class="theme-light">
   <h1 class="gradient-orbent">Orbent</h1>
   <p class="subtitle">Visão sistêmica. Cultura viva. Inteligência com propósito.</p>
 </body>
-```
+
 
 ---
 
 ## 💫 Gradiente Oficial
 
-```css
+css
 linear-gradient(45deg, #f8ad00 0%, #e13333 50%, #3992ff 100%);
-```
+
 
 Aplicação sugerida:
 
-```html
+html
 <h1 class="gradient-orbent">Orbent</h1>
-```
+
 
 ---
 
@@ -109,7 +104,7 @@ Aplicação sugerida:
 
 O repositório inclui um arquivo **`index.html`** com o layout **corporativo minimalista**:
 
-```html
+html
 <body>
   <main class="layout">
     <div class="brand">
@@ -120,7 +115,7 @@ O repositório inclui um arquivo **`index.html`** com o layout **corporativo min
     </div>
   </main>
 </body>
-```
+
 
 ![Exemplo Hero](./assets/pattern/Hero%20Section.jpeg)
 
@@ -141,19 +136,19 @@ O repositório inclui um arquivo **`index.html`** com o layout **corporativo min
 
 O Design System suporta variações de marca mantendo o selo **“by Orbent”**.
 
-```css
+css
 :root.brand-client {
   --orb-primary: #0E3A5B;
   --orb-accent: #00C48C;
   --orb-gold: #FF7A59;
 }
-```
 
-```html
+
+html
 <span class="brand-ribbon">
   ACME <span class="brand-ribbon__by">by Orbent</span>
 </span>
-```
+
 
 ---
 
@@ -168,15 +163,15 @@ O Design System suporta variações de marca mantendo o selo **“by Orbent”**
 
 Use este repositório como **submódulo Git** para unificar identidade visual:
 
-```bash
+bash
 git submodule add https://github.com/rosanesouzzza/orbent-brand-assets.git src/assets/orbent
-```
+
 
 Ou importe o CSS diretamente via URL:
 
-```css
+css
 @import url("https://raw.githubusercontent.com/rosanesouzzza/orbent-brand-assets/main/css/orbent.css");
-```
+
 
 ---
 
@@ -186,20 +181,5 @@ Ou importe o CSS diretamente via URL:
 Uso permitido apenas em produtos e clientes licenciados **by Orbent**.
 Reprodução, redistribuição ou modificação sem autorização é proibida.
 
----
 
-````
-
----
-
-✅ **Próximos passos:**
-1. Crie o arquivo `README.md` na raiz do repositório.  
-2. Cole o conteúdo acima.  
-3. Execute no terminal:
-   ```bash
-   git add README.md
-   git commit -m "Add Orbent README v1 – Brand System overview"
-   git push origin main
-````
-
-Deseja que eu gere também o **banner visual de capa** (imagem `README-cover.png`) para o topo do repositório no GitHub, combinando logo + gradiente Orbent + fundo galáxia?
+```
