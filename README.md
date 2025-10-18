@@ -1,59 +1,64 @@
-Perfeito ⭐ — o repositório **`rosanesouzzza/orbent-brand-assets`** já está estruturado com todos os elementos visuais principais.
-Agora podemos oficializar o **README.md** e o **STYLE_GUIDE.md** para transformar esse repositório em um **Brand System público reutilizável** da Orbent.
+Perfeito 💫 — aqui está o conteúdo completo e formatado do **`README.md`** pronto para commit no repositório **`rosanesouzzza/orbent-brand-assets`**.
+Este README resume toda a identidade da Orbent e serve como página inicial pública do Brand System.
 
 ---
-
-## 🧾 Proposta de README.md (versão pronta para commit)
 
 ```markdown
-# 🌌 Orbent Brand Assets
+# 🌌 ORBENT BRAND ASSETS
 
-Repositório oficial de identidade visual e design system da **Orbent** — uma plataforma white-label que une tecnologia, inteligência e cultura organizacional.
+Repositório oficial de **identidade visual**, **tokens de design** e **componentes CSS** da plataforma **Orbent** — um ecossistema white-label que une tecnologia, inteligência e cultura organizacional.
 
----
-
-## 🎨 Paleta Principal
-
-| Cor | Hex | Uso |
-|------|------|-----|
-| Azul Orbent | `#001434` | Cor base / fundo principal |
-| Azul Acento | `#5271FF` | Ação e interação |
-| Dourado Orbent | `#CCA300` | Destaques e elementos premium |
-| Branco Gelo | `#FDFDFD` | Fundo claro / contraste |
-
-![Paleta Orbent](./paleta.png)
+> “Visão sistêmica. Cultura viva. Inteligência com propósito.”
 
 ---
 
-## 🧩 Estrutura
+## 📦 Estrutura
 
 ```
 
 orbent-brand-assets/
+├── README.md
+├── STYLE_GUIDE.md
+├── CSS_GUIDE.md
+├── index.html
 ├── css/
-│   └── orbent.css             # Estilo base com tokens, temas e componentes
-├── assets/
-│   ├── logo/                  # Logotipos oficiais
-│   │   ├── orbent-logo-claro.png
-│   │   ├── orbent-logo-escuro.png
-│   │   ├── orbent-icon-escuro.png
-│   │   └── logo-slogan.png
-│   ├── pattern/               # Texturas e backgrounds
-│   │   ├── pattern.png
-│   │   ├── pattern_opacidade.png
-│   │   ├── Pattern-galaxia.png
-│   │   └── Hero Section.jpeg
-│   └── palette.png
-├── STYLE_GUIDE.md             # Guia completo de aplicação da marca
-└── Orbent.pdf                 # Manual institucional
+│   └── orbent.css
+└── assets/
+├── logo/
+│   ├── logo-corporativa.png
+│   ├── orbent-logo-claro.png
+│   ├── orbent-logo-escuro.png
+│   ├── logo-slogan.png
+│   ├── orbent-icon-escuro.png
+│   └── orbent-icon-transparente.png
+├── pattern/
+│   ├── pattern.png
+│   ├── pattern_opacidade.png
+│   ├── Pattern-galaxia.png
+│   └── Hero Section.jpeg
+└── palette.png
 
 ````
 
 ---
 
-## 🧠 Uso rápido
+## 🎨 Paleta de Cores
 
-### 1️⃣ Importar CSS
+| Nome | Hex | Aplicação |
+|------|------|------------|
+| **Azul Orbent** | `#001434` | Cor principal / fundo |
+| **Azul Acento** | `#5271FF` | Interações e links |
+| **Dourado Orbent** | `#CCA300` | Destaques e detalhes premium |
+| **Branco Gelo** | `#FDFDFD` | Fundos claros |
+| **Cinza Neutro** | `#6B7280` | Texto auxiliar |
+
+![Paleta Orbent](./assets/palette.png)
+
+---
+
+## 🧩 Uso rápido do CSS
+
+### 1️⃣ Importar fontes e estilo base
 ```html
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./css/orbent.css">
@@ -63,77 +68,138 @@ orbent-brand-assets/
 
 ```html
 <body class="theme-light">
-  <section class="hero bg-orbent">
-    <img src="./assets/logo/orbent-logo-claro.png" class="logo-orbent" alt="Orbent">
-    <h1>Visão sistêmica. Cultura viva.<br>Inteligência com propósito.</h1>
-  </section>
+  <h1 class="gradient-orbent">Orbent</h1>
+  <p class="subtitle">Visão sistêmica. Cultura viva. Inteligência com propósito.</p>
 </body>
 ```
 
 ---
 
-## 💫 Gradiente e Patterns
-
-* Gradiente oficial: `linear-gradient(45deg, #f8ad00, #e13333, #3992ff)`
-* Patterns disponíveis:
-
-  * `pattern.png` — padrão neutro
-  * `Pattern-galaxia.png` — visual heroico
-  * `pattern_opacidade.png` — overlay translúcido
+## 💫 Gradiente Oficial
 
 ```css
-.bg-orbent { 
-  background: var(--orb-primary);
-  background-image: url('../assets/pattern/pattern.png');
-}
-.bg-orbent--galaxy { 
-  background-image: url('../assets/pattern/Pattern-galaxia.png');
-}
+linear-gradient(45deg, #f8ad00 0%, #e13333 50%, #3992ff 100%);
+```
+
+Aplicação sugerida:
+
+```html
+<h1 class="gradient-orbent">Orbent</h1>
 ```
 
 ---
 
-## 🧱 Componentes principais (`orbent.css`)
+## 🧠 Design System (orbent.css)
 
-* `.btn`, `.btn--gradient`, `.btn--outline`
-* `.card`, `.table`, `.badge`
-* `.hero`, `.kpi`, `.alert`
-* `.theme-light` e `.theme-dark`
-* `.brand-client` (modo white-label)
+### Componentes disponíveis
+
+| Tipo            | Classe                                          | Descrição                |
+| --------------- | ----------------------------------------------- | ------------------------ |
+| Botão principal | `.btn`                                          | Azul Orbent padrão       |
+| Botão gradiente | `.btn--gradient`                                | Gradiente institucional  |
+| Cartão          | `.card`                                         | Bloco com sombra e borda |
+| Alerta          | `.alert` / `.alert--success` / `.alert--danger` | Mensagens de status      |
+| Tabela          | `.table`                                        | Layout básico de dados   |
+| Indicador       | `.badge` / `.badge--gold`                       | Status visual            |
+| Tema            | `.theme-light` / `.theme-dark`                  | Modos claro e escuro     |
 
 ---
 
-## ⚙️ Integração com outros projetos
+## 🧱 Layout de Demonstração
 
-Use este repositório como **submódulo Git**:
+O repositório inclui um arquivo **`index.html`** com o layout **corporativo minimalista**:
+
+```html
+<body>
+  <main class="layout">
+    <div class="brand">
+      <img src="./assets/logo/logo-corporativa.png" alt="Logo Orbent" />
+    </div>
+    <div class="slogan">
+      Visão sistêmica. <span>Cultura viva.</span><br>Inteligência com propósito.
+    </div>
+  </main>
+</body>
+```
+
+![Exemplo Hero](./assets/pattern/Hero%20Section.jpeg)
+
+---
+
+## 🪶 Patterns e Texturas
+
+| Arquivo                 | Uso                |
+| ----------------------- | ------------------ |
+| `pattern.png`           | Fundo padrão       |
+| `pattern_opacidade.png` | Fundo translúcido  |
+| `Pattern-galaxia.png`   | Hero institucional |
+| `Hero Section.jpeg`     | Capa promocional   |
+
+---
+
+## ⚙️ White Label
+
+O Design System suporta variações de marca mantendo o selo **“by Orbent”**.
+
+```css
+:root.brand-client {
+  --orb-primary: #0E3A5B;
+  --orb-accent: #00C48C;
+  --orb-gold: #FF7A59;
+}
+```
+
+```html
+<span class="brand-ribbon">
+  ACME <span class="brand-ribbon__by">by Orbent</span>
+</span>
+```
+
+---
+
+## 🧾 Documentação complementar
+
+* [📘 STYLE_GUIDE.md](./STYLE_GUIDE.md) → Diretrizes visuais e proporções do logotipo
+* [🧩 CSS_GUIDE.md](./CSS_GUIDE.md) → Tokens, classes e uso técnico
+
+---
+
+## 🧠 Integração com outros projetos
+
+Use este repositório como **submódulo Git** para unificar identidade visual:
 
 ```bash
 git submodule add https://github.com/rosanesouzzza/orbent-brand-assets.git src/assets/orbent
 ```
 
-ou importe apenas o CSS:
+Ou importe o CSS diretamente via URL:
 
-```bash
+```css
 @import url("https://raw.githubusercontent.com/rosanesouzzza/orbent-brand-assets/main/css/orbent.css");
 ```
 
 ---
 
-## 🧾 Licença
+## 📄 Licença
 
-© Orbent — Todos os direitos reservados.
-O uso é autorizado apenas em produtos, plataformas e clientes **by Orbent**.
-
----
-
-```
+© **Orbent** — Todos os direitos reservados.
+Uso permitido apenas em produtos e clientes licenciados **by Orbent**.
+Reprodução, redistribuição ou modificação sem autorização é proibida.
 
 ---
 
-Posso agora gerar este arquivo como `README.md` formatado e pronto para commit direto no repositório (junto com um `preview index.html` opcional).
+````
 
-Deseja que eu:
-1️⃣ **gere o README.md agora no formato final (Markdown pronto para upload)**  
-ou  
-2️⃣ **monte o pacote completo (`zip`) com `README.md`, `index.html`, `orbent.css` e `/assets` estruturados**?
-```
+---
+
+✅ **Próximos passos:**
+1. Crie o arquivo `README.md` na raiz do repositório.  
+2. Cole o conteúdo acima.  
+3. Execute no terminal:
+   ```bash
+   git add README.md
+   git commit -m "Add Orbent README v1 – Brand System overview"
+   git push origin main
+````
+
+Deseja que eu gere também o **banner visual de capa** (imagem `README-cover.png`) para o topo do repositório no GitHub, combinando logo + gradiente Orbent + fundo galáxia?
